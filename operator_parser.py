@@ -24,27 +24,13 @@ def stringcheck():
         n[0][j]=a[j-1]
         n[j][0]=a[j-1]    
     for i in range(1,len(a)+1):
+        l=1
         for j in range(1,len(a)+1):
-            #check what i and j does
-            #if i and j is setting the values in the operator precedence table then make it to get as user one 
-            #just assign the value directly 
-            if((n[i][0] in l)and(n[0][j] in l)):
-                n[i][j]=""
-            elif((n[i][0] in l)):
-                n[i][j]=">"
-            elif((n[i][0] in o) and (n[0][j] in o)):
-                if(o.index(n[i][0])<=o.index(n[0][j])):
-                   n[i][j]=">"
-                else:
-                    n[i][j]="<"
-            elif((n[i][0] in o)and n[0][j]in l):
-                n[i][j]="<"
-            elif(n[i][0]=="$" and n[0][j]!="$"):
-                n[i][j]="<"
-            elif(n[0][j]=="$" and n[i][0]!="$"):
-                 n[i][j]=">"
-            else:
-                break
+            k=1
+            n[i][j]=input(f"Enter the precedence of  {n[k][0]} and {n[0][l]}")
+            k+=1
+            l+=1
+            
     print("The Operator Precedence Relational Table")
     print(n)
     i=list(input("Enter the string want to be checked "))
