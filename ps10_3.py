@@ -1,3 +1,6 @@
+//program to associate three address code of Boolean expressions (involving relational
+//operators, “and”, ”or” and not) with each node in the parse tree.
+
 from collections import defaultdict
 
 binary_operator=["+","-","/","*","and","or",">","<","==","<=",">=","!="]
