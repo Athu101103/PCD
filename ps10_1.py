@@ -1,3 +1,6 @@
+// to associate postfix notation of the given arithmetic expression with every node
+// in the parse tree.
+
 from collections import *
 
 class Node:
