@@ -1,3 +1,6 @@
+//program to associate three address code of arithmetic expression (integer data types
+//and mixed data types) with each node in the parse tree.
+
 #Intermediate code generation
 
 precedence={'+':1,'-':1, '*':2, "/":2}
